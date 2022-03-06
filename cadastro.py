@@ -61,11 +61,11 @@ def pdf():
     pdf_show.drawString(200,800,"Produtos cadastrados")
     pdf_show.setFont("Times-Bold", 12)
     #------------------------------------------#
-    pdf_show.drawString(10,690,"ID")
-    pdf_show.drawString(110,690,"CODIGO")
-    pdf_show.drawString(210,690,"PRODUTO")
-    pdf_show.drawString(310,690, "PREÇO")
-    pdf_show.drawString(410,690,"CATEGORIA")
+    pdf_show.drawString(10,740,"ID")
+    pdf_show.drawString(110,740,"CODIGO")
+    pdf_show.drawString(210,740,"PRODUTO")
+    pdf_show.drawString(310,740, "PREÇO")
+    pdf_show.drawString(410,740,"CATEGORIA")
     for  i in range(0, len(dados_lidos)):
         y = y + 60
         pdf_show.drawString(10,750 - y, str(dados_lidos[i][0]))
